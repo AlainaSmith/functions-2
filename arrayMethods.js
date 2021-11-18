@@ -9,16 +9,18 @@
 // Do not edit the code below.
 const mixedNumbers = [6,3,1,7,5,2,6,8,9,4,2,7,9,3,1,8,4,3];
 // Do not edit the code above.
-
+const evenNumbers = mixedNumbers.filter(function(element, index, wholeArray)) => {
+  ///ASK ABOUT THIS NEXT PART
+}
 /*
   Use the filter method on mixedNumbers to make a new array of just the even numbers.
-  The filter function takes a callback with the parameters
+  The filter function (.filter()) takes a callback with the parameters
   function(element, index, wholeArray){}  Function Form
   (element, index, wholeArray)=>{}    Arrow Form
 */
 
 
-const evenNumbers // = mixedNumbers.filter(/* Provide Your Callback Here */)
+const evenNumbers = mixedNumbers.filter(cb(//insert my answer here come back to this))
 
 
 
@@ -29,7 +31,7 @@ const prices = [15.00, 23.00, 78.00, 34.00, 12.00, 86.00, 12.00, 79.00, 32.00];
 // Do not edit the code above.
 
 /*
-  Use the map method on the prices array to calculate a new array of post-tax prices.
+  Use the map (.map) method on the prices array to calculate a new array of post-tax prices.
   Use a 7% tax rate.
   Math reminder! To calculate the price after tax, multiply the price by 1 plus the taxRate as a decimal.
   Example: if tax is 7%, the price afterTax could be calculated like this: afterTax = price * 1.07) 
@@ -39,7 +41,10 @@ const prices = [15.00, 23.00, 78.00, 34.00, 12.00, 86.00, 12.00, 79.00, 32.00];
 */
 
 // CODE HERE
-const postTaxPrices // = prices.map(/* Provide Your Callback Here );
+const postTaxPrices = prices.map(function(//figure out what goes here) {
+
+}
+);
 
 
 
@@ -56,9 +61,9 @@ const populations = [8175133, 3792621, 2695598, 2100263];
   (runningTotal, curElement, curIndex, wholeArray)=>{} Arrow Form
 */
 
-// CODE HERE
-const totalPopulation //  = populations.reduce(/* Provide Your Callback Here */)
 
+const totalPopulation = populations.reduce(cb(element))
+//ask about implementing the function correctly
 
 
 ////////// PROBLEM 4 //////////
@@ -82,7 +87,8 @@ const monstersInYourPocket = [{"monster":"Bulbabunny","CP":156},{"monster":"Bulb
 */
 
 // CODE HERE
-const myStrongest // = monstersInYourPocket.filter(/* Provide Your Callback Here */)
+const myStrongest = monstersInYourPocket.filter(/* Provide Your Callback Here */)
+//auh jeeze. come back to this on Saturday. Make note in planner. 
 
 
 
@@ -96,12 +102,15 @@ const orders = [{"price":15,"tax":0.09},{"price":42,"tax":0.07},{"price":56,"tax
 // Do not edit code above.
 
 /*
-  Use a higher order method to get all the order totals after adding in the sales tax (given to you as a tax rate, hint: you'll need to do some multiplication). Your answer should be an array of numbers, one total for each order.
+  Use a higher order method to get all the order totals after adding in the sales tax 
+  (given to you as a tax rate, hint: you'll need to do some multiplication). 
+  Your answer should be an array of numbers, one total for each order.
 */
 
-// CODE HERE
-
-
+const 
+//1. figure out what to call the higher order
+//2.organize the .map( ) function to be used corectly. I am using map to make a copy of the order before adding tax.
+//3.look up on your google slides how to return with .map
 
 ////////// PROBLEM 6 //////////
 
@@ -119,4 +128,4 @@ const purchases = [{"owner":"Barry","price":103},{"owner":"Bob","price":75},
   Use a high order method(s) to create to get the sum of bobsTotal.
 */
 
-// CODE HERE
+cost bobsTotal = (/*figure out what goes here*/) = 
