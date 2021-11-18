@@ -203,6 +203,8 @@ each(names, cb(item, index) => `The item at index ${index} is ${item}`)
   When the correct user object is found, invoke the callback with the user object as an argument.
 */
 
+
+}
 // Do not edit the code below.
 var users = [
   {
@@ -226,16 +228,22 @@ var users = [
 ]
 // Do not edit the code above.
 
-// CODE HERE 
+const getUserById = (arr, id, cb) => {
+ for (let i = 0; i < arr.length) {
+   if(arr[i].id === id)                //the array here is searching for an id that matches one in the array, meaning it also needs to declare that is the type of array of products its going through, so we need to assign arr[i].id to it. 
+   return cb(arr[i])
+ }
+}
+}
 
 
 // UNCOMMENT THE FUNCTION CALL BELOW
 // RUN THIS FILE WITH NODE
 // CHECK YOUR ANSWER
 
-// getUserById(users, '16t', user => {
-//   console.log('The user with the id 16t has the email of ' + user.email + ' the name of ' + user.name + ' and the address of ' + user.address) 
-// })
+getUserById(users, '16t', user => {
+console.log('The user with the id 16t has the email of ' + user.email + ' the name of ' + user.name + ' and the address of ' + user.address) 
+ })
 
 ////////// CHALLENGE //////////
 
