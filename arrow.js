@@ -68,7 +68,6 @@ declaration
     Write an arrow function called 'jsNinja' that returns the string: 'I am a JavaScript ninja!'
 */
 
-//QUESTION why is it not showing in terminal?
 
 
 const jsNinja = () =>  'I am a JavaScript ninja'
@@ -100,8 +99,7 @@ const compareNums = (num1, num2) => {
 
 let someNum = compareNums(10, 20)
 console.log(someNum)
-  //num1 = +num1
-  //num2 = +num2
+ 
 ////////// PROBLEM 6 //////////
 
 /*

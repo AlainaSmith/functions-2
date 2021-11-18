@@ -176,10 +176,11 @@ uniq (names, printUniqArr)
 /* 
   Write a function called each that takes in an array of names and a callback function. 
   For each name in the array, invoke the callback and pass in the name and the name's index as arguments.
-*/
+*///var names = ['Tyler', 'Cahlan', 'Ryan', 'Colt', 'Tyler', 'Blaine', 'Cahlan']
 
 function each = (arr, cb) => {
-  
+  arr.forEach(names)
+  cb(names[i])
 }
 
 
@@ -190,8 +191,10 @@ function each = (arr, cb) => {
   'The item at index [INDEXPARAM] is [ITEMPARAM].'
 */
 
-// CODE HERE
-
+each(names, cb(item, index) => `The item at index ${index} is ${item}`)
+//we are invoking the function forEach by putting the word each first
+//then passing in the 2 parameters which are names and cb function which has two paramters, item and index. 
+//the cb is then printing a template literal, represented by the ${} that I put.
 
 ////////// PROBLEM 7 //////////
 
