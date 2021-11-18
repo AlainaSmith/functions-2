@@ -178,7 +178,9 @@ uniq (names, printUniqArr)
   For each name in the array, invoke the callback and pass in the name and the name's index as arguments.
 */
 
-// CODE HERE 
+function each = (arr, cb) => {
+  
+}
 
 
 /*
